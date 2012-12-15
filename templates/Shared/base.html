@@ -1,0 +1,129 @@
+{% load active %}
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- BASIC NEEDS
+   ================================================== -->
+    <meta charset="utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="Property management and development in New Zealand">
+    <meta name="author" content="Jacob Duval">
+
+    <!-- MOBILE META
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements
+   ================================================== -->
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <!-- CSS
+   ================================================== -->
+    <link href="{{STATIC_URL}}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/font-awesome.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/prettyPhoto.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/custom-style.css" rel="stylesheet">
+
+    <!-- GOOGLE FONT
+    ================================================== -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700" />
+    <link rel='stylesheet' id='mission-font-css'  href='http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2' type='text/css' media='all' />
+
+    <!-- FABICON
+     ================================================== -->
+    <link rel="shortcut icon" href="">
+        {% block CSS %}
+        {% endblock %}
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <header id="header" class="navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <div  class="logo">
+                            <h3><a href="/">ETP</a> <small>Equity Trust Pacific</small></h3>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <div class="menu">
+                            <ul class="main-menu">
+                                <li><a class="{% active request '^(?i)/$' %}" href="/">Home</a></li>
+                                <li><a class = "{% active request '^(?i)/about/' %}" href="/about">About Us</a></li>
+                                <li><a class = "{% active request '^(?i)/contact' %}" href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Add your site or application content here -->
+
+        {% block body %}
+        {% endblock %}
+
+        {% block JS %}
+        {% endblock %}
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="span4">
+                        <div class="widget">
+                            <h3 class="widget-title">About Us</h3>
+                            <p>Proin fermentum sollicitudin ante, sed tempor eros molestie id. Donec volutpat odio eu mi imperdiet nec laoreet diam venenatis. Proin fermentum sollicitudin ante, sed tempor eros molestie id. Donec volutpat odio eu mi imperdiet nec laoreet diam venenatis.</p>
+                        </div>
+                    </div>
+
+                    <div class="span4">
+                    </div>
+                    <div class="span4">
+                        <h3 class="widget-title">Where We Are</h3>
+                        <p class="address">Dhaka Desk IT. <br />Abdullapur, Uttara, DHAKA</p>
+                        <p class="phone">Phone: (515) 128-9678 <br />Fax: (515) 128-9678</p>
+                        <p class="email">support@dhakadesk.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="copyrights">
+            <div class="container">
+                <div class="row">
+                    <div class="terms-condition span7">
+                        <ul class="copyright">
+                            <li>TM + © 2012 DUVAL SOFTWARE. All rights reserved</li>
+                        </ul>
+                    </div>
+                    <div class="span5">
+                        <ul class="social-links pull-right">
+                            <li><a href="" rel="tooltip" data-placement="top" data-original-title="Facebook"><i class="icon-facebook"></i></a></li>
+                            <li><a href="" rel="tooltip" data-placement="top" data-original-title="Twitter"><i class="icon-twitter"></i></a></li>
+                            <li><a href="" rel="tooltip" data-placement="top" data-original-title="LinkedIn"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="https://plus.google.com/106590464137322187874/about?gl=nz&hl=en" rel="tooltip" data-placement="top" data-original-title="Google Plus"><i class="icon-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JAVASCRIPTS
+       ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/vendor/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/vendor/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/custom-script.js"></script>
+
+    </body>
+</html>

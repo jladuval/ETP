@@ -1,0 +1,132 @@
+{%  extends 'Shared/base.html' %}
+{%  block title %} Equity Trust Pacific - Home {% endblock %}
+{% block body %}
+
+    <div id="main">
+    <div class="container">
+    <div class="row">
+    <section id="page-title" class="message-container span12">
+        <h1>Creating </h1>
+        <hr>
+    </section>
+    <section id="slideshow"  class="span12">
+        <div class="carousel-wrapper">
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <img src="{{STATIC_URL}}img/slide/slide_4.jpg" />
+                        <div class="carousel-caption">
+                            <h3>First Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{STATIC_URL}}img/slide/slide_2.jpg" />
+                        <div class="carousel-caption">
+                            <h3>Second Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{STATIC_URL}}img/slide/slide_3.jpg" />
+                        <div class="carousel-caption">
+                            <h3>Third Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{STATIC_URL}}img/slide/slide_1.jpg" />
+                        <div class="carousel-caption">
+                            <h3>Fourth Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+        </div>
+    </section>
+    <section id="our-experience" class="span12">
+        <div class="row">
+            <div class="span4">
+                <div class="experience-icon">
+                    <i class="icon-columns"></i>
+                </div>
+                <h4 class="section-title">Commercial Leasing</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            </div>
+            <div class="span4">
+                <div class="experience-icon">
+                    <i class="icon-home"></i>
+                </div>
+                <h4 class="section-title">Residential Housing</h4>
+                <p>Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante. Morbi pulvinar ligula at sapien ultricies hendrerit. Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante aliquam neque.</p>
+            </div>
+            <div class="span4">
+                <div class="experience-icon">
+                    <i class="icon-leaf"></i>
+                </div>
+                <h4 class="section-title">Property Development</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            </div>
+        </div>
+    </section>
+    <section id="our-work" class="span12">
+        <h4 class="section-title">PROPERTIES<small></small></h4>
+        <hr>
+        <div id="work-items" class="row">
+            <div class="media-box span4">
+                <div class="view view-first">
+                    <a href=""><img src="{{STATIC_URL}}img/work/pacific_tower.jpg" alt="" title="" /></a>
+                    <div class="mask">
+                        <h4><a href="" title="">Pacific Tower</a></h4>
+                        <p><a href="">166 Gloucester Stree</a></p>
+                        <a href="{{STATIC_URL}}img/work/pacific_tower.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="media-box span4">
+                <div class="view view-first">
+                    <a href=""><img src="{{STATIC_URL}}img/work/cathedral_junction.jpg" alt="" title="" /></a>
+                    <div class="mask">
+                        <h4><a href="" title="">Cathedral Junction</a></h4>
+                        <p><a href="">109 Worcester Street</a></p>
+                        <a href="{{STATIC_URL}}img/work/cathedral_junction.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="media-box span4">
+                <div class="view view-first">
+                    <a href=""><img src="{{STATIC_URL}}img/work/fino.jpg" alt="" title="" /></a>
+                    <div class="mask">
+                        <h4><a href="" title="">Fino Casementi</a></h4>
+                        <p><a href="">87-89 Kilmore St</a></p>
+                        <a href="{{STATIC_URL}}img/work/fino.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-partner" class="span12">
+        <h4 class="section-title">PARTNERS</h4>
+        <hr>
+        <div class="row">
+            <div class="span6">
+                <div class="view-first blackground">
+                    <a href=""><img src="{{STATIC_URL}}img/partners/fortis.jpg" /></a>
+                </div>
+            </div>
+            <div class="span6">
+                <div class="view-first">
+                    <a href=""><img src="{{STATIC_URL}}img/partners/select.jpg" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}

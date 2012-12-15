@@ -1,0 +1,44 @@
+{% extends 'Shared/base.html' %}
+
+{% block title %}Equity Trust Pacific - Contact{% endblock %}
+
+{%  block body %}
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <section id="page-title" class="span12">
+                    <h1>Contact Us</h1>
+                    <h3>We wish to hear something from you</h3>
+                    <hr>
+                </section>
+            </div>
+            <div class="row">
+                <section id="google"  class="span12">
+                    <div class="view-first">
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?oe=utf-8&amp;client=firefox-a&amp;q=uttara&amp;ie=UTF8&amp;hq=uttara&amp;hnear=&amp;t=m&amp;ll=37.262153,-79.942041&amp;spn=0.006295,0.006295&amp;output=embed"></iframe>
+                    </div>
+                </section>
+                <section id="page-title" class="span12">
+                    <p>Sed nunc tortor, sagittis quis viverra id, molestie vitae nibh. Donec vitae lacus sed risus accumsan consectetur ut a ligula. Etiam vitae nisi diam, in rutrum dui. In facilisis, erat sed laoreet aliquet, mauris urna placerat enim, eget varius nulla lacus ut erat. Mauris faucibus orci ac turpis facilisis et tempus metus venenatis. Pellentesque ornare, risus et vulputate mollis.</p>
+                    <hr>
+                </section>
+                <section id="content" class="span3">
+                    <h3 class="comment-title">Where We Are</h3>
+                    <p class="address">Dhaka Desk IT<br>Abdullapur, Uttara, DHAKA</p>
+                    <p class="phone">Phone: <span class="">(515) 128-9678</span><br>Fax: (415) 124-5678</p>
+                    <p class="email">support@dhakadesk.com</p>
+                </section>
+                <section id="blog-single" class="span9">
+                    <form class="comment-form" action="/SendEmail/" method="POST">
+                        {% csrf_token %}
+                        <h3 class="comment-title">Leave a comment</h3>
+                        <p><input class="span4" id="nameField" name="Name" type="text" placeholder="Name"></p>
+                        <p><input class="span4" id="emailField" name="Email" type="text" placeholder="Email"></p>
+                        <p><textarea class="span6" id="messageField"rows="6" name="Message" placeholder="Message"></textarea></p>
+                        <button id="contactSend" class="btn btn-large btn-success">Send</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}
